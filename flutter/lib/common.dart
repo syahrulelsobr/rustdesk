@@ -249,8 +249,21 @@ class ColorThemeExtension extends ThemeExtension<ColorThemeExtension> {
 
 class MyTheme {
   MyTheme._();
-
-  static const Color grayBg = Color(0xFFEFEFF2);
+  // Ganti seluruh blok static const Color di MyTheme dengan ini:
+  static const Color grayBg      = Color(0xFFF5F5F5);  // background halaman utama
+  static const Color accent      = Color(0xFF00897B);  // warna utama (tombol, highlight)
+  static const Color accent50    = Color(0xFF00695C);  // accent lebih gelap
+  static const Color accent80    = Color(0xFF004D40);  // accent paling gelap
+  static const Color canvasColor = Color(0xFF1E1E1E);  // background dark mode
+  static const Color border      = Color(0xFFE0E0E0);  // garis border
+  static const Color idColor     = Color(0xFF00BCD4);  // warna teks ID
+  static const Color darkGray    = Color.fromARGB(255, 100, 100, 100);
+  static const Color cmIdColor   = Color(0xFF0097A7);  // warna ID di connection manager
+  static const Color dark        = Colors.black87;
+  static const Color button      = Color(0xFF4DB6AC);  // tombol secondary
+  static const Color hoverBorder = Color(0xFF00897B);  // border saat hover
+  /*--- WARNA ASLI --*/
+  /*static const Color grayBg = Color(0xFFEFEFF2);
   static const Color accent = Color(0xFF0071FF);
   static const Color accent50 = Color(0x770071FF);
   static const Color accent80 = Color(0xAA0071FF);
@@ -261,7 +274,7 @@ class MyTheme {
   static const Color cmIdColor = Color(0xFF21790B);
   static const Color dark = Colors.black87;
   static const Color button = Color(0xFF2C8CFF);
-  static const Color hoverBorder = Color(0xFF999999);
+  static const Color hoverBorder = Color(0xFF999999);*/
 
   // ListTile
   static const ListTileThemeData listTileTheme = ListTileThemeData(
@@ -454,7 +467,16 @@ class MyTheme {
         style:
             MenuStyle(backgroundColor: MaterialStatePropertyAll(Colors.white))),
     colorScheme: ColorScheme.light(
-        primary: Colors.blue, secondary: accent, background: grayBg),
+        /* -- WARNA EDIT --*/
+        primary:   Color.fromARGB(255, 56, 134, 185),  // warna utama
+        secondary: Color.fromARGB(255, 128, 192, 245),  // warna sekunder
+        surface:   Color(0xFFF5F5F5),  // background card
+        error:     Color(0xFFD32F2F),  // warna error
+        onPrimary: Colors.white,       // teks di atas primary
+        
+        /*primary: Colors.blue,
+        secondary: accent,*/
+        background: grayBg),
     popupMenuTheme: PopupMenuThemeData(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -562,6 +584,17 @@ class MyTheme {
         style: MenuStyle(
             backgroundColor: MaterialStatePropertyAll(Color(0xFF121212)))),
     colorScheme: ColorScheme.dark(
+      /*-- WARNA EDIT --*/
+      colorScheme: const ColorScheme.dark(
+      primary:   Color.fromARGB(255, 10, 60, 83),  // warna utama dark
+      secondary: Color.fromARGB(255, 20, 23, 216),  // warna sekunder dark
+      surface:   Color(0xFF1E1E1E),  // background card dark
+      error:     Color(0xFFEF5350),  // warna error dark
+      onPrimary: Colors.white,
+),
+
+
+      /*-- WARNA ASLI --*/
       primary: Colors.blue,
       secondary: accent,
       background: Color(0xFF24252B),
