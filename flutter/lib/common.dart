@@ -250,18 +250,18 @@ class ColorThemeExtension extends ThemeExtension<ColorThemeExtension> {
 class MyTheme {
   MyTheme._();
   // Ganti seluruh blok static const Color di MyTheme dengan ini:
-  static const Color grayBg      = Color(0xFFF5F5F5);  // background halaman utama
-  static const Color accent      = Color(0xFF00897B);  // warna utama (tombol, highlight)
-  static const Color accent50    = Color(0xFF00695C);  // accent lebih gelap
-  static const Color accent80    = Color(0xFF004D40);  // accent paling gelap
-  static const Color canvasColor = Color(0xFF1E1E1E);  // background dark mode
-  static const Color border      = Color(0xFFE0E0E0);  // garis border
-  static const Color idColor     = Color(0xFF00BCD4);  // warna teks ID
-  static const Color darkGray    = Color.fromARGB(255, 100, 100, 100);
-  static const Color cmIdColor   = Color(0xFF0097A7);  // warna ID di connection manager
+  static const Color grayBg      = Color(0xFFEAF2F8); // background utama (sesuai logo)
+  static const Color accent      = Color(0xFF7FA8C0); // warna dominan tombol & highlight
+  static const Color accent50    = Color(0xFF5B8FA8); // accent lebih gelap
+  static const Color accent80    = Color(0xFF3D7A96); // accent paling gelap
+  static const Color canvasColor = Color(0xFF1C2E38); // background dark mode (navy gelap)
+  static const Color border      = Color(0xFFCCDEE8); // garis border
+  static const Color idColor     = Color(0xFF5B8FA8); // warna teks ID
+  static const Color darkGray    = Color.fromARGB(255, 120, 150, 168);
+  static const Color cmIdColor   = Color(0xFF3D7A96); // ID di connection manager
   static const Color dark        = Colors.black87;
-  static const Color button      = Color(0xFF4DB6AC);  // tombol secondary
-  static const Color hoverBorder = Color(0xFF00897B);  // border saat hover
+  static const Color button      = Color(0xFF9BBFD4); // tombol secondary
+  static const Color hoverBorder = Color(0xFF7FA8C0); // border saat hover
   /*--- WARNA ASLI --*/
   /*static const Color grayBg = Color(0xFFEFEFF2);
   static const Color accent = Color(0xFF0071FF);
